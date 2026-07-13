@@ -1,0 +1,16 @@
+com\bloomcare\repository\PatientRepository.class
+com\bloomcare\service\AppointmentService.class
+com\bloomcare\service\DoctorService.class
+com\bloomcare\controller\AppointmentController.class
+com\bloomcare\repository\AppointmentRepository.class
+com\bloomcare\controller\HomeController.class
+com\bloomcare\controller\PatientController.class
+com\bloomcare\entity\Appointment.class
+com\bloomcare\entity\Doctor.class
+com\bloomcare\entity\Patient.class
+com\bloomcare\service\PatientService.class
+com\bloomcare\config\SecurityConfig.class
+com\bloomcare\controller\DoctorController.class
+com\bloomcare\repository\DoctorRepository.class
+com\bloomcare\BloomcareHospitalApplication.class
+com\bloomcare\controller\AdminController.class
