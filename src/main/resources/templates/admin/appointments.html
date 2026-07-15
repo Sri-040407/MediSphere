@@ -52,8 +52,10 @@
                     <td th:text="${appointment.appointmentDate}">2026-01-01</td>
                     <td th:text="${appointment.appointmentTime}">10:00</td>
                     <td>
-                        <span class="badge" th:classappend="${appointment.status == 'Confirmed'} ? 'bg-sky text-white' : ${appointment.status == 'Completed'} ? 'bg-success text-white' : ${appointment.status == 'Cancelled'} ? 'bg-danger text-white' : 'bg-warning text-dark'" th:text="${appointment.status}">Pending</span>
-                    </td>
+    <span class="badge bg-primary" th:text="${appointment.status}">
+        Pending
+    </span>
+</td>
                     <td>
                         <a th:href="@{'/admin/appointments/edit/' + ${appointment.id}}" class="btn btn-sm btn-outline-pink me-2">Edit</a>
                         <a th:href="@{'/admin/appointments/delete/' + ${appointment.id}}" class="btn btn-danger btn-sm">Cancel</a>
