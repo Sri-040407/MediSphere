@@ -209,6 +209,15 @@ body {
     min-height: 300px;
 }
 
+.language-switcher {
+    max-width: 120px;
+    border-radius: 999px;
+    border: 1px solid rgba(246, 183, 205, 0.7);
+    background: #fff;
+    color: #5b2d4a;
+    padding: 0.35rem 0.75rem;
+}
+
 @media (max-width: 991px) {
     .admin-main {
         margin-left: 0;

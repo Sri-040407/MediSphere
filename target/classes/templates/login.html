@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Admin Login - BloomCare</title>
+    <title>Admin Login - MediSphere</title>
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/webjars/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="/css/styles.css"/>
 </head>
 <body class="login-page">
 <div class="login-card rounded-4 shadow-soft bg-white p-5">
-    <h3 class="mb-4">Admin Login</h3>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="mb-0" data-i18n="loginTitle">Admin Login</h3>
+        <select id="languageSwitcher" class="form-select form-select-sm language-switcher" aria-label="Language">
+            <option value="en">EN</option>
+            <option value="hi">हिं</option>
+            <option value="te">TEL</option>
+        </select>
+    </div>
     <form method="post" action="/login">
         <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+            <label for="username" class="form-label" data-i18n="usernameLabel">Username</label>
+            <input type="text" class="form-control" id="username" name="username" data-i18n-placeholder="usernamePlaceholder" placeholder="Enter username" required>
         </div>
         <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+            <label for="password" class="form-label" data-i18n="passwordLabel">Password</label>
+            <input type="password" class="form-control" id="password" name="password" data-i18n-placeholder="passwordPlaceholder" placeholder="Enter password" required>
         </div>
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="remember-me" name="remember-me">
-                <label class="form-check-label" for="remember-me">Remember Me</label>
+                <label class="form-check-label" for="remember-me" data-i18n="rememberMe">Remember Me</label>
             </div>
-            <a href="#" class="text-pink">Forgot Password?</a>
+            <a href="#" class="text-pink" data-i18n="forgotPassword">Forgot Password?</a>
         </div>
-        <button type="submit" class="btn btn-pink w-100">Login</button>
+        <button type="submit" class="btn btn-pink w-100" data-i18n="loginButton">Login</button>
     </form>
 </div>
 <script src="/webjars/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

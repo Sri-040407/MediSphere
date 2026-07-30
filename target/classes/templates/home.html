@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>BloomCare Women & Child Hospital</title>
+    <title>MediSphere Women & Child Hospital</title>
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/webjars/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="/css/styles.css"/>
@@ -11,18 +11,25 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light py-4">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="/">BloomCare</a>
+        <a class="navbar-brand fw-bold" href="/" data-i18n="brand">MediSphere</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="btn btn-outline-pink ms-3" href="/login">Admin Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about" data-i18n="navAbout">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services" data-i18n="navServices">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#departments" data-i18n="navDepartments">Departments</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials" data-i18n="navTestimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="navContact">Contact</a></li>
+                <li class="nav-item">
+                    <select id="languageSwitcher" class="form-select form-select-sm language-switcher ms-2" aria-label="Language">
+                        <option value="en">EN</option>
+                        <option value="hi">हिं</option>
+                        <option value="te">TEL</option>
+                    </select>
+                </li>
+                <li class="nav-item"><a class="btn btn-outline-pink ms-3" href="/login" data-i18n="navAdmin">Admin Login</a></li>
             </ul>
         </div>
     </div>
@@ -32,12 +39,12 @@
         <div class="row align-items-center gy-5">
             <div class="col-lg-6">
                 <div class="hero-copy p-4 rounded-4 shadow-soft bg-white">
-                    <span class="eyebrow mb-3 d-inline-block">Women & Child Care</span>
-                    <h1 class="display-5 fw-bold">Welcome to BloomCare Women & Child Hospital</h1>
-                    <p class="lead lh-lg">Providing compassionate care for women, mothers, newborns, and children with modern healthcare facilities and experienced specialists.</p>
+                    <span class="eyebrow mb-3 d-inline-block" data-i18n="heroEyebrow">Women & Child Care</span>
+                    <h1 class="display-5 fw-bold" data-i18n="heroTitle">Welcome to MediSphere Women & Child Hospital</h1>
+                    <p class="lead lh-lg" data-i18n="heroText">Providing compassionate care for women, mothers, newborns, and children with modern healthcare facilities and experienced specialists.</p>
                     <div class="mt-4">
-                        <a href="/admin/appointments/add" class="btn btn-pink btn-lg me-3">Book Appointment</a>
-                        <a href="#doctors" class="btn btn-outline-pink btn-lg">Meet Our Doctors</a>
+                        <a href="/admin/appointments/add" class="btn btn-pink btn-lg me-3" data-i18n="heroPrimary">Book Appointment</a>
+                        <a href="#doctors" class="btn btn-outline-pink btn-lg" data-i18n="heroSecondary">Meet Our Doctors</a>
                     </div>
                 </div>
             </div>
@@ -45,8 +52,8 @@
                 <div class="hero-card rounded-4 shadow-soft p-4 bg-glass d-flex align-items-center justify-content-center">
                     <div class="hero-preview text-center text-pink">
                         <i class="fa-solid fa-hospital fa-4x mb-4"></i>
-                        <h4 class="mb-2">BloomCare</h4>
-                        <p class="mb-0">Warm care for mothers, newborns, and little ones.</p>
+                        <h4 class="mb-2" data-i18n="heroCardTitle">MediSphere</h4>
+                        <p class="mb-0" data-i18n="heroCardText">Warm care for mothers, newborns, and little ones.</p>
                     </div>
                 </div>
             </div>
@@ -58,7 +65,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="rounded-4 shadow-soft p-4 bg-white">
-                    <h2>About Us</h2>
+                    <h2 data-i18n="aboutTitle">About Us</h2>
                     <p>We are dedicated to providing exceptional healthcare services for women, mothers, newborns, and children through compassionate treatment, advanced medical technology, and experienced healthcare professionals.</p>
                     <p>Our team delivers personalized, family-focused care in a warm, reassuring environment at every stage of pregnancy, childbirth, and childhood wellness.</p>
                 </div>
@@ -88,7 +95,7 @@
     <div class="container">
         <div class="section-header text-center mb-5">
             <small class="text-uppercase text-muted">Our Services</small>
-            <h2>Comprehensive Care for Women and Children</h2>
+            <h2 data-i18n="servicesSubtitle">Comprehensive Care for Women and Children</h2>
         </div>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
@@ -186,7 +193,7 @@
     <div class="container">
         <div class="section-header text-center mb-5">
             <small class="text-uppercase text-muted">Testimonials</small>
-            <h2>Families Trust BloomCare</h2>
+            <h2>Families Trust MediSphere</h2>
         </div>
         <div class="row g-4">
             <div class="col-md-6">
@@ -211,13 +218,13 @@
         <div class="row gy-4">
             <div class="col-lg-6">
                 <div class="rounded-4 shadow-soft p-4 bg-white">
-                    <h2>Contact Us</h2>
-                    <p>BloomCare Women & Child Hospital</p>
+                    <h2 data-i18n="contactTitle">Contact Us</h2>
+                    <p>MediSphere Women & Child Hospital</p>
                     <p><strong>📍</strong> 123 Wellness Avenue, Hyderabad, Telangana, India</p>
                     <p><strong>📞</strong> +91 98765 43210</p>
                     <p><strong>☎</strong> +91 40 2345 6789</p>
-                    <p><strong>📧</strong> info@bloomcarehospital.com</p>
-                    <p><strong>🌐</strong> www.bloomcarehospital.com</p>
+                    <p><strong>📧</strong> info@medispherehospital.com</p>
+                    <p><strong>🌐</strong> www.medispherehospital.com</p>
                     <p><strong>Open Hours:</strong><br/>Monday–Saturday: 8:00 AM – 8:00 PM<br/>Sunday: Emergency Services Only</p>
                     <div class="social-icons mt-4">
                         <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
@@ -262,7 +269,7 @@
             </div>
             <div class="col-md-4">
                 <h5>Contact</h5>
-                <p>© 2026 BloomCare Women & Child Hospital. All Rights Reserved.</p>
+                <p>© 2026 MediSphere Women & Child Hospital. All Rights Reserved.</p>
             </div>
         </div>
     </div>
