@@ -1,53 +1,82 @@
-# BloomCare – Women & Child Hospital Management System
+# 🏥 MediSphere – Hospital Management System
 
-## About the Project
+MediSphere is a web-based **Hospital Management System** developed using Java and Spring Boot. The system helps administrators manage patients, doctors, and appointments through a simple and user-friendly interface.
 
-BloomCare is a Women & Child Hospital Management System developed using Java, Spring Boot, Spring Security, Thymeleaf, and MySQL.
+## 📌 About the Project
 
-## Features
+MediSphere is designed to simplify hospital management by providing centralized management of patient information, doctor information, and appointments.
 
-### Admin Authentication
+The project was developed as part of the **Infosys Springboard project**.
+
+## ✨ Features
+
+### 🔐 Admin Authentication
 - Admin Login
 - Secure authentication using Spring Security
+- Admin access control
+- Logout functionality
 
-### Patient Management
+### 👤 Patient Management
 - Add Patient
 - View Patients
-- Update Patient
+- Update Patient Details
 - Delete Patient
 
-### Doctor Management
+### 👨‍⚕️ Doctor Management
 - Add Doctor
 - View Doctors
-- Update Doctor
+- Update Doctor Details
 - Delete Doctor
 
-### Appointment Management
+### 📅 Appointment Management
 - Book Appointment
 - View Appointments
+- Edit Appointment
+- Update Appointment Details
 - Update Appointment Status
 - Cancel Appointment
+
+### 📊 Admin Dashboard
+- View total patients
+- View total doctors
+- View total appointments
+- Track appointment status
 
 ## Technologies Used
 
 - Java
 - Spring Boot
 - Spring Security
+- Spring MVC
 - Thymeleaf
+- Spring Data JPA
 - MySQL
 - HTML
 - CSS
 - Bootstrap
 - Maven
+- Visual Studio Code
 
-## How to Run
+## Project Structure
 
-1. Start MySQL Server.
-2. Create the `bloomcare_db` database.
-3. Open the project in Visual Studio Code.
-4. Run the Spring Boot application.
-5. Open `http://localhost:8081` in a browser.
-
-## Project Purpose
-
-This project was developed as part of the Infosys Springboard project to demonstrate hospital management functionality using Spring Boot and database integration.
+```text
+MediSphere/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── bloomcare/
+│   │   │           ├── controller/
+│   │   │           ├── entity/
+│   │   │           ├── repository/
+│   │   │           ├── service/
+│   │   │           └── BloomcareHospitalApplication.java
+│   │   │
+│   │   └── resources/
+│   │       ├── templates/
+│   │       ├── static/
+│   │       └── application.properties
+│   │
+├── pom.xml
+└── README.md
